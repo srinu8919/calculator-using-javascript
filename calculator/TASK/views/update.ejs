@@ -1,0 +1,12 @@
+<%- include('header/header.ejs') %>
+<form method="post" action="/update/<%= id %>">
+    <label>TaskName</label>
+    <input type="text" name="TaskName" value="<%= contacts.TaskName%>">
+    <br>
+    <label>Status</label>
+    <input type="text" name="Status" value="<%= contacts.Status%>">
+    <br>
+    
+    <input type="submit">
+</form>
+<%- include('footer/footer.ejs') %>

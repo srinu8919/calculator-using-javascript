@@ -1,0 +1,14 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+         <h1>DETAILS</h1>
+         <% for(var i=0;i<file.Employees.length;i++){ %>
+        <%= file.Employees[i].userId%> 
+          <%= file.Employees[i].jobTitle%> 
+            <p> <a href="/update/<%= i%>">clickhere</a></p>
+            <% } %>
+    </form>
+    </body>
+</html>
